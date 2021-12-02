@@ -1,14 +1,16 @@
 #include <fstream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
-vector<int> readFile(string filename) {
-    vector<int> data;
+template<typename T>
+vector<T> readFile(string filename) {
+    vector<T> data;
 
     ifstream in(filename, ios::in);
 
-    int temp;
+    T temp;
 
     while(in >> temp){
         data.push_back(temp);

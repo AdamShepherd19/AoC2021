@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int stageOne(vector<int> data)
+int stageOne(vector<int> data) 
 {
     int counter = 0;
 
@@ -34,7 +34,7 @@ int stageTwo(vector<int> data)
 }
 
 int main(){
-    vector<int> data = readFile("day_1_input.txt");
+    vector<int> data = readFile<int>("day_1_input.txt");
 
     cout << " - Stage One: " << stageOne(data) << endl;
     cout << " - Stage Two: " << stageTwo(data) << endl;
