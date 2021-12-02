@@ -3,10 +3,10 @@
 
 using namespace std;
 
-vector<int> readFile() {
+vector<int> readFile(string filename) {
     vector<int> data;
 
-    ifstream in("day_1_input.txt", ios::in);
+    ifstream in(filename, ios::in);
 
     int temp;
 
