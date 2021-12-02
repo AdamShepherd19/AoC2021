@@ -3,8 +3,8 @@
 
 using namespace std;
 
-int stageOne(vector<int> data) {
-    
+int stageOne(vector<int> data)
+{
     int counter = 0;
 
     for (int x = 0; x < data.size() - 1; x++)
@@ -17,21 +17,19 @@ int stageOne(vector<int> data) {
     return counter;
 }
 
-int stageTwo(vector<int> data) {
+int stageTwo(vector<int> data)
+{
     int counter = 0;
 
     for (int x = 0; x < data.size()-3; x++)
     {
         int sum = data[x] + data[x+1] + data[x+2];
         int nextSum = data[x+1] + data[x+2] + data[x+3];
-
         if (sum < nextSum)
         {
             counter++;
         }
-        
     }
-
     return counter;
 }
 
