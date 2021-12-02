@@ -12,8 +12,11 @@ vector<T> readFile(string filename) {
 
     T temp;
 
-    while(in >> temp){
-        data.push_back(temp);
+    while(getline(in, temp)){
+        if (temp.size() > 0)
+        {
+            data.push_back(temp);
+        }
     }
 
     in.close();
