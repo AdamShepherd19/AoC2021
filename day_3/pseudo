@@ -1,0 +1,35 @@
+function (data, iteration){
+    if data.length > 1:
+        for every item in data:
+            col += data[item][iteration]
+        
+        mostCommon = findMostCommon(col)
+
+        for every item in data:
+            if item[iteration] == mostCommon:
+                add item to subset
+
+        subset = function ( subset, iteration )
+    
+    return subset
+}
+
+while data.length > 1:
+
+    find most common in col(iteration)
+
+    for every item in data:
+        if row[iteration] == findMostCommon
+            add row to subset
+
+function (data, iteration)
+    if data.length > 1:
+        find mostCommon in col(iteration)
+
+        for every row in data:
+            if row[iteration] == mostCommon:
+                subset += row
+        
+        return function(subset, iteration++)
+    
+    return data
